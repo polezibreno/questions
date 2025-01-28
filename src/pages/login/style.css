@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 28px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: whitesmoke;
+    justify-content: center;
+    
+}
+.radio input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+.butao {
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    gap: 10px;
+    /* Espaço entre os botões */
+
+}
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: rgb(12, 39, 70);
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: whitesmoke;
+    padding: 0 15px;
+    /* Ajusta o tamanho horizontal */
+    line-height: 30px;
+
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 30, 61);
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+
+    & p {
+        color: whitesmoke;
+        font-weight: bold;
+
+        & span {
+            font-weight: normal;
+        }
+    }
+
+
+    & button {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        padding-right: 10px;
+    }
+
+    & button:hover {
+        opacity: 0.5;
+    }
+}
+
+.input-field::placeholder {
+    color: whitesmoke;       /* Cor azul para o placeholder */
+    font-size: 14px;    /* Tamanho de fonte para o placeholder */
+  }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 50%;
+    width: 400px;
+    margin-bottom: 20px;
+    background-color: rgb(4, 30, 61);
+
+    & button:hover {
+        opacity: 0.7;
+    }
+
+    & input {
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        border-radius: 5px;
+        height: 30px;
+        background-color: rgb(3, 21, 43);
+        color: whitesmoke;
+        padding: 5px;
+        outline: none;
+    }
+
+    & textarea {
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgb(3, 21, 43);
+        color: whitesmoke;
+        outline: none;
+    }
+}
+
